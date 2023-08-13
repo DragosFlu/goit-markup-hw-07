@@ -275,7 +275,15 @@ button:active {
 /* header
  */
 .header .logo {
-  padding: 24px 0;
+  padding: 16px 0;
+}
+
+.header .menu-button {
+  background: transparent;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
 }
 
 .main-nav,
@@ -284,21 +292,8 @@ button:active {
   align-items: center;
 }
 
-/* .menu {
-  display: flex;
-  margin-left: 93px;
-  padding: 0;
-  gap: 50px;
-} */
-
 .menu li {
   position: relative;
-}
-
-.menu a,
-.menu-contacts a {
-  padding: 32px 0;
-  display: block;
 }
 
 .menu-contacts {
@@ -570,17 +565,6 @@ li:focus .overlay {
   transition: var(--transition);
 }
 
-.menu li a.active::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2px;
-  position: absolute;
-  bottom: 0;
-  border-radius: 2px;
-  background: var(--active-color);
-}
-
 /* Subscription form */
 
 .subscription-form {
@@ -752,6 +736,9 @@ a.terms-and-co {
 
 /* Tablet styles */
 @media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
   .menu {
     font-size: 14px;
     font-style: normal;
@@ -773,7 +760,7 @@ a.terms-and-co {
   }
   .menu-contacts {
     display: flex;
-    margin: 11px auto 11px auto;
+    margin: 11px 15px 11px auto;
     flex-direction: column;
   }
 
@@ -782,10 +769,30 @@ a.terms-and-co {
     display: block;
     padding: 0px;
   }
+  .menu li a.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 45px;
+    border-radius: 2px;
+    background: var(--active-color);
+  }
+  .header .menu-button {
+    display: none;
+  }
+
+  .header .logo {
+    padding: 24px 0;
+  }
 }
 
 /* Desktop styles */
 @media screen and (min-width: 1158px) {
+  .container {
+    width: 1200px;
+  }
   .logo {
     margin: 0;
   }
@@ -795,5 +802,21 @@ a.terms-and-co {
     margin: 0 0 0 auto;
     gap: 60px;
     flex-direction: row;
+  }
+  .menu a,
+  .menu-contacts a {
+    padding: 32px 0;
+    display: block;
+  }
+  .menu li a.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 2px;
+    background: var(--active-color);
+    top: auto;
   }
 }
