@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./ccs/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container main-nav">
+        <nav class="nav-menu">
+          <a href="index.html"
+            ><h3 class="logo"><span class="logo-color">Web</span>Studio</h3></a
+          >
+          <ul class="menu">
+            <li><a href="index.html">Studio</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </nav>
+        <ul class="menu-contacts">
+          <li>
+            <a class="header-contacts" href="mailto:info@devstudio.com"
+              ><svg width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope" />
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="header-contacts" href="tel:+12127724150"
+              ><svg width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone" />
+              </svg>
+              +1 212-772-4150</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!--Hero section-->
+      <section class="section container">
+        <ul class="filter-buttons">
+          <li><button type="button" class="button">All</button></li>
+          <li><button type="button" class="button">Web sites</button></li>
+          <li><button type="button" class="button">Apps</button></li>
+          <li><button type="button" class="button">Design</button></li>
+          <li><button type="button" class="button">Marketing</button></li>
+        </ul>
+        <ul class="product-list">
+          <li>
+            <div class="card-thumb">
+              <img
+                src="./images/technoduck.jpg"
+                width="370px"
+                height="294px"
+                alt="team member photo"
+              />
+              <div class="overlay">
+                <p class="overlay-text">
+                  Technoduck is a state-of-the-art coronavirus distribution
+                  platform. Companies use this platform for digital espionage
+                  and attacks on competitors' secure servers.
+                </p>
+              </div>
+            </div>
+
+            <div class="product-desc">
+              <h3 class="product-name">Technoduck</h3>
+              <span class="product-description">Web-site</span>
+            </div>
+          </li>
+          <li>
+            <div class="card-thumb">
+              <img
+                src="./images/poster.jpg"
+                width="370px"
+                height="294px"
+                alt="team member photo"
+              />
+              <div class="overlay">
+                <p class="overlay-text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p>
+              </div>
+            </div>
+
+            <div class="product-desc">
+              <h3 class="product-name">Poster New Orlean vs Golden Star</h3>
+              <em class="product-description">Design</em>
+            </div>
+          </li>
+          <li>
+            <div class="card-thumb">
+              <img
+                src="./images/seafood_restaurant.jpg"
+                width="370px"
+                height="294px"
+                alt="team member photo"
+              />
+              <div class="overlay">
+                <p class="overlay-text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p>
+              </div>
+            </div>
+
+            <div class="product-desc">
+              <h3 class="product-name">Seafood Restaurant</h3>
+              <em class="product-description">Apps</em>
+            </div>
+          </li>
+          <li>
+            <div class="card-thumb">
+              <img
+                src="./images/project_prime.jpg"
+                width="370px"
+                height="294px"
+                alt="team member photo"
+              />
+              <div class="overlay">
+                <p class="overlay-text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p>
+              </div>
+            </div>
+
+            <div class="product-desc">
+              <h3 class="product-name">Project Prime</h3>
+              <em class="product-description">Marketing</em>
+            </div>
+          </li>
+          <li>
+            <div class="card-thumb">
+              <img
+                src="./images/project_boxes.jpg"
+                width="370px"
+                height="294px"
+                alt="team member photo"
+              />
+              <div class="overlay">
+                <p class="overlay-text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p>
+              </div>
+            </div>
+
+            <div class="product-desc">
+              <h3 class="product-name">Project Boxes</h3>
+              <em class="product-description">Apps</em>
+            </div>
+          </li>
+          <li>
+            <div class="card-thumb">
+              <img
+                src="./images/inspiration.jpg"
+                width="370px"
+                height="294px"
+                alt="team member photo"
+              />
+              <div class="overlay">
+                <p class="overlay-text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p>
+              </div>
+            </div>
+
+            <div class="product-desc">
+              <h3 class="product-name">Inspiration has no Borders</h3>
+              <em class="product-description">Web-site</em>
+            </div>
+          </li>
+          <li>
+            <div class="card-thumb">
+              <img
+                src="./images/limited_editon.jpg"
+                width="370px"
+                height="294px"
+                alt="team member photo"
+              />
+              <div class="overlay">
+                <p class="overlay-text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p>
+              </div>
+            </div>
+
+            <div class="product-desc">
+              <h3 class="product-name">Web-site</h3>
+              <em class="product-description">Design</em>
+            </div>
+          </li>
+          <li>
+            <div class="card-thumb">
+              <img
+                src="./images/project_lab.jpg"
+                width="370px"
+                height="294px"
+                alt="team member photo"
+              />
+              <div class="overlay">
+                <p class="overlay-text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p>
+              </div>
+            </div>
+
+            <div class="product-desc">
+              <h3 class="product-name">Project LAB</h3>
+              <em class="product-description">Design</em>
+            </div>
+          </li>
+          <li>
+            <div class="card-thumb">
+              <img
+                src="./images/growing_businnes.jpg"
+                width="370px"
+                height="294px"
+                alt="team member photo"
+              />
+              <div class="overlay">
+                <p class="overlay-text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p>
+              </div>
+            </div>
+
+            <div class="product-desc">
+              <h3 class="product-name">Growing Business</h3>
+              <em class="product-description">Apps</em>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="container">
+        <div>
+          <a href="index.html"
+            ><h3 class="logo-dark-bg logo">
+              <span class="logo-color">Web</span>Studio
+            </h3></a
+          >
+          <address class="address">
+            <ul class="address-list">
+              <li>695 Park Ave, NY 10065, USA</li>
+              <li>
+                <a class="footer-contacts" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="footer-contacts" href="tel:+12127724150"
+                  >+1 212-772-4150</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-social">
+          <h3 class="article-title">Find us on</h3>
+          <ul class="footer-icons">
+            <li>
+              <a class="footer-icon" href="">
+                <svg width="20px" height="20px">
+                  <use xlink:href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="footer-icon" href="">
+                <svg width="20px" height="20px">
+                  <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="footer-icon" href="">
+                <svg width="20px" height="20px">
+                  <use xlink:href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="footer-icon" href="">
+                <svg width="20px" height="20px">
+                  <use xlink:href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Subscribe -->
+        <div class="subscription-form">
+          <h3 class="article-title">Subscribe to the newsletter</h3>
+          <form action="javascript:void(0)" class="form-content">
+            <label>
+              <input
+                class="input-email"
+                type="text"
+                name="e-mail"
+                placeholder="E-mail"
+                id=""
+              />
+            </label>
+            <button type="submit" class="subscribe-btn">
+              Subscribe <img src="./icon-send.svg" alt="" />
+            </button>
+          </form>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
