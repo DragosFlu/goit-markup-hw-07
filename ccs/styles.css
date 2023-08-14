@@ -18,7 +18,8 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1200px;
+  /* width: 480px; */
+  padding: 0 15px;
 }
 
 .section {
@@ -27,7 +28,7 @@ body {
 }
 
 .section.no-padding {
-  padding-top: 0;
+  display: none;
 }
 
 .header {
@@ -120,6 +121,7 @@ button:active {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .footer-social .article-title,
@@ -248,7 +250,7 @@ button:active {
 .article-list {
   padding-inline-start: unset;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   gap: 30px;
 }
 
@@ -387,7 +389,10 @@ button:active {
   border-radius: 4px;
   background: var(--filter-background-color);
   margin-bottom: 30px;
-  padding: 25px 100px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Clients */
@@ -897,6 +902,17 @@ a.terms-and-co {
   .modal-content {
     width: 450px;
   }
+
+  .article-list li {
+    flex-basis: calc((100% - 30px * 2) / 2);
+    margin: 15px;
+  }
+  .article-list {
+    display: flex;
+    gap: 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 /* Desktop styles */
@@ -961,5 +977,22 @@ a.terms-and-co {
   }
   .form-label .form-textarea {
     width: 448px;
+  }
+
+  .article-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .article-list li {
+    max-width: 270px;
+  }
+  .article-title {
+    text-align: unset;
+  }
+
+  .section.no-padding {
+    padding-top: 0;
+    display: block;
   }
 }
