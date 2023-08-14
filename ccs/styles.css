@@ -17,6 +17,7 @@ body {
 }
 
 .container {
+  width: 480px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -146,7 +147,7 @@ button:active {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
-  margin-left: 15px;
+  /* margin-left: 15px; */
 }
 
 .logo-dark-bg {
@@ -240,6 +241,7 @@ button:active {
   line-height: normal;
   letter-spacing: 0.42px;
   margin-top: 28px;
+  text-align: center;
 }
 
 .footer-contacts {
@@ -397,6 +399,7 @@ button:active {
 /* Clients */
 .clients {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   color: var(--svg-color);
@@ -406,7 +409,7 @@ button:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border-radius: 4px;
   border: 1px solid #afb1b8;
@@ -421,14 +424,25 @@ button:active {
 
 .footer .container {
   display: flex;
+  flex-direction: column;
 }
+
+.contacts-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
 .footer-social {
-  margin-left: 94px;
+  /* margin-left: 94px; */
+  margin-bottom: 60px;
 }
 
 .footer-social .footer-icons {
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
 
 .footer-icon {
@@ -579,16 +593,18 @@ li:focus .overlay {
 /* Subscription form */
 
 .subscription-form {
-  margin-left: 93px;
+  /* margin-left: 93px; */
 }
 
 .form-content {
   display: flex;
-  gap: 12px;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .input-email {
-  width: 358px;
+  width: 90vw;
   height: 50px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -930,6 +946,11 @@ a.terms-and-co {
   .item-desc .item-socials {
     justify-content: center;
   }
+
+  .client-item {
+    width: 226px;
+    height: 92px;
+  }
 }
 
 /* Desktop styles */
@@ -1017,5 +1038,46 @@ a.terms-and-co {
     flex-direction: row;
     justify-content: center;
     flex-wrap: nowrap;
+  }
+
+  .clients {
+    flex-wrap: nowrap;
+  }
+
+  .client-item {
+    width: 170px;
+    height: 92px;
+  }
+  .footer .container {
+    flex-direction: row;
+  }
+  .contacts-block {
+  }
+
+  .logo {
+    margin-left: 15px;
+  }
+  .address {
+    text-align: unset;
+  }
+  .footer-social {
+    margin-left: 94px;
+    margin-bottom: 0;
+  }
+
+  .footer-social .footer-icons {
+    justify-content: unset;
+  }
+  .subscription-form {
+    margin-left: 93px;
+  }
+  .form-content {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+    justify-content: unset;
+  }
+  .input-email {
+    width: 358px;
   }
 }
