@@ -21,6 +21,63 @@
     <link rel="stylesheet" href="./ccs/styles.css" />
   </head>
   <body>
+    <!-- Mobile menu -->
+    <div class="js-menu-container is-open">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40">
+          <use xlink:href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="menu-drawer-navigation">
+        <ul class="menu-links">
+          <li><a href="index.html" class="active">Studio</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+      </div>
+      <ul class="menu-drawer-contacts">
+        <li>
+          <a href="tel:+12127724150"> +1 212-772-4150</a>
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="menu-social-list">
+        <li class="menu-social-item">
+          <a class="menu-social-link" href="#">Instagram</a>
+        </li>
+        <li class="menu-social-item">
+          <a
+            class="menu-social-link"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Twitter</a
+          >
+        </li>
+        <li class="menu-social-item">
+          <a
+            class="menu-social-link"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Facebook</a
+          >
+        </li>
+        <li class="menu-social-item">
+          <a
+            class="menu-social-link"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Linkedin</a
+          >
+        </li>
+      </ul>
+    </div>
+
     <header class="header">
       <div class="container main-nav">
         <nav class="nav-menu">
@@ -52,7 +109,7 @@
           </li>
         </ul>
       </div>
-      <button class="menu-button">
+      <button class="menu-button js-open-menu">
         <svg width="40px" height="40px">
           <use xlink:href="./images/icons.svg#icon-menu"></use>
         </svg>
@@ -571,5 +628,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
