@@ -951,6 +951,12 @@ a.terms-and-co {
     width: 226px;
     height: 92px;
   }
+
+  .contacts-and-socials {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 
 /* Desktop styles */
@@ -1050,13 +1056,12 @@ a.terms-and-co {
   }
   .footer .container {
     flex-direction: row;
+    align-items: baseline;
   }
-  .contacts-block {
+  .contacts-block a {
+    align-self: self-start;
   }
 
-  .logo {
-    margin-left: 15px;
-  }
   .address {
     text-align: unset;
   }
