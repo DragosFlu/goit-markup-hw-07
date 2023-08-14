@@ -891,7 +891,9 @@ a.terms-and-co {
   .hero {
     background-image: url(../images/hero_img_tablet.png);
   }
-
+  .js-menu-container {
+    display: none;
+  }
   .modal-content {
     width: 450px;
   }
