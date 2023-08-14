@@ -18,7 +18,6 @@ body {
 
 .container {
   margin: 0 auto;
-  /* width: 480px; */
   padding: 0 15px;
 }
 
@@ -747,12 +746,11 @@ a.terms-and-co {
 }
 
 .js-menu-container {
-  /* display: none; */
   display: flex;
   flex-direction: column;
   position: fixed;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   top: 0;
   right: 0;
   background-color: white;
@@ -841,6 +839,15 @@ a.terms-and-co {
   height: 100%;
   background-color: rgba(33, 33, 33, 0.2);
 }
+
+/* Responsive */
+
+@media (min-width: 320px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
 /* Tablet styles */
 @media screen and (min-width: 768px) {
   .container {
